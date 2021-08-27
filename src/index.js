@@ -1,4 +1,3 @@
-import './sass/main.scss';
 import fetchImage from './apiService';
 
 const refs = {
