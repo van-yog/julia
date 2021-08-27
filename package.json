@@ -6,7 +6,7 @@
   "homepage": "https://van-yog.github.io/julia/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder/"
+    "build": "parcel build src/*.html --public-url /julia/"
   },
   "repository": {
     "type": "git",
