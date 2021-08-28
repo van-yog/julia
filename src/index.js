@@ -42,7 +42,14 @@ function onSubmit(e) {
 
   fetchImage(searchValue, page)
     .then(images => showImages(images))
-    .then(addLoadMoreBtn)
+    .then(() => {
+      if (refs.gallery.children.length) {
+        addLoadMoreBtn();
+      } else {
+        refs.gallery.innerHTML = 'Try again';
+        refs.loadMoreBtn?.remove();
+      }
+    })
     .catch(err => console.log(err));
 }
 
